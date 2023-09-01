@@ -4,6 +4,7 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="?page=home">Home</a></li>
           <li class="breadcrumb-item active">Dashboard</li>
+          <li class="breadcrumb-item active">asdasdasd</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -11,7 +12,7 @@
         <!-- <div class="col-lg-8"> -->
           <div class="row">
 
-          <?php if ($_SESSION['login']['level'] == 'admin') : ?>
+          <?php if ($_SESSION['login']['level'] == 'admin') : ?> 
             <!-- Sales Card -->
             <div class="col-xl-4 col-md-6">
               <div class="card info-card">

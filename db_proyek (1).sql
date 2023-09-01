@@ -31,7 +31,7 @@ CREATE TABLE `absensi` (
   `id_absensi` int NOT NULL,
   `id_karyawan` varchar(10) NOT NULL,
   `tanggal` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 --
 -- Dumping data for table `absensi`
@@ -65,7 +65,7 @@ CREATE TABLE `alat` (
   `id_project` varchar(10) NOT NULL,
   `harga` varchar(10) NOT NULL,
   `tgl_beli` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 --
 -- Dumping data for table `alat`
@@ -89,7 +89,7 @@ CREATE TABLE `bahan` (
   `id_project` varchar(10) NOT NULL,
   `harga` varchar(10) NOT NULL,
   `tgl_beli` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 --
 -- Dumping data for table `bahan`
@@ -110,7 +110,7 @@ CREATE TABLE `karyawan` (
   `jabatan` varchar(50) NOT NULL,
   `upah` varchar(10) NOT NULL,
   `id_project` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 --
 -- Dumping data for table `karyawan`
@@ -135,7 +135,7 @@ CREATE TABLE `login` (
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
   `level` enum('admin','karyawan') NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 --
 -- Dumping data for table `login`
@@ -156,7 +156,7 @@ CREATE TABLE `mobilisasi` (
   `tgl` date NOT NULL,
   `keterangan` text NOT NULL,
   `harga` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 --
 -- Dumping data for table `mobilisasi`
@@ -176,7 +176,7 @@ CREATE TABLE `project` (
   `nama_project` varchar(100) NOT NULL,
   `alamat` text NOT NULL,
   `deposit` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 --
 -- Dumping data for table `project`
@@ -197,7 +197,7 @@ CREATE TABLE `supplier` (
   `nama_supplier` varchar(100) NOT NULL,
   `no_telp` varchar(12) NOT NULL,
   `alamat` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 --
 -- Dumping data for table `supplier`
@@ -220,7 +220,7 @@ CREATE TABLE `upah` (
   `upah_add` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `upah_total` varchar(10) NOT NULL,
   `keterangan` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ;
 
 --
 -- Dumping data for table `upah`

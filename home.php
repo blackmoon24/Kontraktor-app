@@ -1,21 +1,20 @@
 <div class="pagetitle">
-      <h1>Dashboard</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="?page=home">Home</a></li>
-          <li class="breadcrumb-item active">Dashboard</li>
-          <li class="breadcrumb-item active">asdqwe</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
+  <h1>Dashboard</h1>
+  <nav>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="?page=home">Home</a></li>
+      <li class="breadcrumb-item active">Dashboard</li>
+    </ol>
+  </nav>
+</div><!-- End Page Title -->
 <!-- Left side columns -->
 <!-- <div class="col-lg-8"> -->
 <div class="row">
 
-          <?php if ($_SESSION['login']['level'] == 'admin') : ?>
-            <!-- Sales Card -->
-            <div class="col-xl-4 col-md-6">
-              <div class="card info-card">
+  <?php if ($_SESSION['login']['level'] == 'admin') : ?>
+    <!-- Sales Card -->
+    <div class="col-xl-4 col-md-6">
+      <div class="card info-card">
 
         <div class="card-body">
           <h5 class="card-title">Jumlah <a href="?page=karyawan">Karyawan</a></h5>
